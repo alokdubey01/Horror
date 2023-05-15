@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+@font-face {
+    font-family: 'horror';
+    src: url("assets/fonts/Another\ Danger\ -\ Demo.otf");
+}
+
+@font-face {
+    font-family: 'horror2';
+    src: url("assets/fonts/youmurdererbb_reg.ttf");
+}
+
+:root {
+    --bg-primary: #d0c2b7;
+    --bg-secondary: #670001;
+    --font-primary: 'horror2';
+    --font-secondary: 'horror';
+    --font-third: 'Creepster', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0px 20px;
+}
+
+nav .logo img {
+    height: 100px;
+    width: 150px;
+    margin-left: -35px;
+    margin-top: -25px;
+    position: relative;
+}
+
+nav .logo p {
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    font-size: 1.8rem;
+}
+
+nav .menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+nav .menu ul li {
+    margin: 0 10px;
+    list-style: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+nav .menu ul li:hover {
+    text-decoration: underline;
+    color: var(--font-secondary);
+}
+
+nav .btn button {
+    background: var(--bg-secondary);
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50px;
+    margin-top: 8px;
+    border: 3px solid var(--bg-primary);
+    outline: 3px solid var(--bg-secondary);
+}
+
+.hero {
+    background-image: url("assets/img/SVG/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160vh;
+}
+
+.hero-text {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.hero-text h1 {
+    font-family: var(--font-secondary);
+    color: var(--bg-secondary);
+}
+
+.warn {
+    margin-top: 25rem;
+    font-family: var(--font-primary);
+    padding: 0px 120px 0px 120px;
+    display: flex;
+    gap: 10rem;
+}
+
+.warn h1 {
+    font-size: 3rem;
+    width: 50%;
+    background: linear-gradient(110deg, #270001 0%, #c70004 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.warn p {
+    width: 50%;
+    font-size: 1.6rem;
+    width: 50%;
+    background: linear-gradient(110deg, #fff 0%, #595959 40%, #3f3f3f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
